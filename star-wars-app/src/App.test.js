@@ -34,12 +34,8 @@ test('render form and test previous and next buttons', async () => {
 // Test to see if data is displaying correctly
 test('render star wars characters names', async () => {
     const wrapper = render(<App />);
-
     const character = await wrapper.findByText(/luke/i);
-
     expect(character).toBeVisible();
-
-
 })
 
 
